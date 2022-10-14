@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, blue, white)
+        }
+
+        .cadastroH1 {
+            text-align: center;
+            text-shadow: 2px 2px 2px #808080;
+        }
+
+        .form {
+            width: 400px;
+            margin: auto;
+            border: 1px solid black;
+            box-shadow: 6px 9px 8px #808080;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, .4);
+        }
+
+        .divInput label {
+            font-size: 14pt;
+        }
+
+        .divInput {
+            width: 300px;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .formInput {
+            width: 300px;
+            border-radius: 10px;
+            height: 30px;
+            font-size: 12pt;
+            box-shadow: 2px 2px 2px #808080;
+        }
+
+        .inputColor {
+            background: white;
+            color: black;
+        }
+
+        .btnColor {
+            background: green;
+            color: white;
+            cursor: pointer;
+            height: 34px;
+        }
+
+        .link {
+            color: blue;
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form" style="padding:20px 0px; margin-top:170px;">
+        <div class="divInput">
+            <h1 class="cadastroH1">Login</h1>
+            <form method='POST' action='/'>
+
+                <label>Email</label><br>
+                <input type="email" name="email" class="formInput inputColor"><br>
+                <br>
+
+                <label>Senha</label><br>
+                <input type="password" name="senha" class="formInput inputColor"><br>
+                <br>
+
+
+                <button class="formInput btnColor">Logar</button>
+                <br><br>
+                <a class="link" href="cadastro">Ainda não sou cadastrado</a>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
